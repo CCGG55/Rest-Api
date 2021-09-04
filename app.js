@@ -24,8 +24,30 @@ app.get("/", (req, res, next) => {
     res.send("Welcome to academic rest api.");
 });
 
+// token middleware
+tkFn = require("./middleware/verifyToken")
+app.use(tkFn)
+
+// Student Routes Loading
 const studentRoutes = require("./routes/student.routes");
 studentRoutes(app);
+
+// Teacher Routes Loading
+const teacherRoutes = require("./routes/teacher.routes");
+teacherRoutes(app);
+
+// User Routes Loading
+const userRoutes = require("./routes/user.routes");
+userRoutes(app);
+
+// Period Routes Loading
+const periodRoutes = require("./routes/period.routes");
+periodRoutes(app);
+
+// Course Routes Loading
+const courseRoutes = require("./routes/course.routes");
+courseRoutes(app);
+
 
 app.listen(port, () => {
     console.log("Server is running...")
