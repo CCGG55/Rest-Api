@@ -2,8 +2,8 @@
     "db-conetions":{
         "mongodb":{
             "host": "cluster0.ubi2m.mongodb.net",
-            "user": "acad_rest_api_user",
-            "password": "90EpcPOm9u3Cw6dg",
+            "user": "pedro",
+            "password": "12345",
             "dbname": "AcademicDB"
         }
     },

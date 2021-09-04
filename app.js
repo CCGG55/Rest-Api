@@ -25,8 +25,7 @@ app.get("/", (req, res, next) => {
 });
 
 // token middleware
-tkFn = require("./middleware/verifyToken")
-app.use(tkFn)
+/** Me da error D: */
 
 // Student Routes Loading
 const studentRoutes = require("./routes/student.routes");
@@ -48,6 +47,9 @@ periodRoutes(app);
 const courseRoutes = require("./routes/course.routes");
 courseRoutes(app);
 
+// Vehiculo Routes Loading
+const vehiculoRoutes = require("./routes/vehiculo.routes");
+vehiculoRoutes(app);
 
 app.listen(port, () => {
     console.log("Server is running...")
