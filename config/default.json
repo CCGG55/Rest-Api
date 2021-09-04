@@ -1,0 +1,18 @@
+{
+    "db-conetions":{
+        "mongodb":{
+            "host": "cluster0.ubi2m.mongodb.net",
+            "user": "acad_rest_api_user",
+            "password": "90EpcPOm9u3Cw6dg",
+            "dbname": "AcademicDB"
+        }
+    },
+    "secretkeys":{
+        "cryptojs": "5GwLALQ@t3C"
+    },
+    "roles":{
+        "student": 1,
+        "teacher": 2
+    },
+    "server-port":3000
+}
